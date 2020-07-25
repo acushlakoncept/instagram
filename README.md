@@ -1,24 +1,11 @@
 # INSTAGRAM CLONE APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this follow along tutorial project, I developed a clone of Instagram app from start to finish.
 
-Things you may want to cover:
+Features covered in this project include:
 
-* Ruby version
+* Using the 'devise' gem for authentication
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Adding the bootstrap gem to our project.
 
 * ...
