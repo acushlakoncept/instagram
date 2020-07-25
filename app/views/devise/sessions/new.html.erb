@@ -1,19 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6 landing-left">
-      <div class="dummy-phone">
-        <div class="screen-shot">
-          <div class="carousel carousel-fade" data-ride="carousel">
-            <div class="carousel-item active">
-              <%= image_tag "phone_screen1.jpg", height: '427', width: '240' %>
-            </div>
-            <div class="carousel-item"><%= image_tag "phone_screen2.jpg", height: '427', width: '240' %></div>
-            <div class="carousel-item"><%= image_tag "phone_screen3.jpg", height: '427', width: '240' %></div>
-            <div class="carousel-item"><%= image_tag "phone_screen4.jpg", height: '427', width: '240' %></div>
-            <div class="carousel-item"><%= image_tag "phone_screen5.jpg", height: '427', width: '240' %></div>
-          </div>
-        </div>
-      </div>
+      <%= render "devise/shared/dummy_phone" %>
     </div>
     <div class="col-lg-6 landing-right text-center d-flex align-items-center">
       <div>
@@ -51,7 +39,6 @@
         <div class="redirect-links box">
           <%= render "devise/shared/links" %>
           </div>
-      <%# end of form-login box %>
       </div>
     </div>
   </div>
