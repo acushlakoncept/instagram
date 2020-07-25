@@ -27,12 +27,6 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.0975);
 }
 
-// .core-sprite {
-//   background-image: image-url("core-sprite.png");
-//   background-size: 400px 374px;
-//   background-repeat: no-repeat;
-// }
-
 .core-sprite {
   background-image: image-url("ig-sprite.png");
   background-size: 428px 425px;
@@ -71,4 +65,75 @@ body {
 
 .nav-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.box {
+  background-color: #fff;
+  border:  1px solid #e6e6e6;
+  padding: 10px 0;
+  margin: 0 0 10px;
+}
+
+.brand-name-img {
+  background-position: 0 0;
+  height: 51px;
+  width: 175px;
+}
+
+.landing-left {
+  .dummy-phone {
+    background-image: url("instagram-1.png");
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-size: 454px 618px;
+    position: relative;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+  }
+
+  .screen-shot {
+    position: absolute;
+    top: 99px;
+    right: 63px;
+
+    .item {
+      position: absolute;
+    }
+  }
+}
+
+.landing-right {
+  .form-login {
+    width: 350px;
+
+    form {
+      padding: 0 40px;
+
+      .btn-primary {
+        width: 100%;
+        line-height: 14px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      input {
+        border: 1px solid #efefef;
+      }
+
+      .form-check-label {
+        padding: 0;
+        font-size: 15px;
+        color: #262626;
+      }
+    }
+
+    .brand-name-img {
+      margin: 22px auto 8px;
+    }
+  }
+
+  .redirect-links{
+    width: 350px;
+  }
 }
