@@ -1,0 +1,74 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+@import "bootstrap";
+
+body {
+  background-color: #fafafa;
+  font-size: 14px;
+  color: #262626;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.0975);
+}
+
+// .core-sprite {
+//   background-image: image-url("core-sprite.png");
+//   background-size: 400px 374px;
+//   background-repeat: no-repeat;
+// }
+
+.core-sprite {
+  background-image: image-url("ig-sprite.png");
+  background-size: 428px 425px;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand {
+  background-position: -176px 0;
+  height: 35px;
+  width: 176px;
+}
+
+.hide-text {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.explore-icon {
+  background-position: -32px -351px;
+  height: 24px;
+  width: 24px;
+}
+
+.notification-icon {
+  background-position: -404px -232px;
+  height: 24px;
+  width: 24px;
+}
+
+.profile-icon {
+  background-position: -330px -179px;
+  height: 24px;
+  width: 24px;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 30px;
+}
