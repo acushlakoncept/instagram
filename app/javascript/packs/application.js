@@ -3,18 +3,14 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+import 'bootstrap'
+import 'toastr'
 
 require("@rails/ujs").start()
 require("turbolinks").start()
-// require("bootstrap").start()
-// require("jquery3").start() 
-// require("popper").start()
-// require("bootstrap-sprockets").start()
 require("@rails/activestorage").start()
 require("channels")
-
-toastr = require("toastr")
-global.jquery = require("jquery")
+// toastr = require("toastr")
 
 
 
