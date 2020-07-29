@@ -55,6 +55,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'devise'
-gem 'rubocop'
 gem 'omniauth', '~> 1.6'
 gem 'omniauth-twitter'
+gem 'rubocop'
