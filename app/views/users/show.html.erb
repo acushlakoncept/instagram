@@ -1,0 +1,13 @@
+<div class="row justify-content-md-center profile-wrapper">
+    <div class="col-md-4 text-center">
+        <%= image_tag @user.image, width: '152', height: '152', class: 'round-img' %>
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <p class="username"><%= @user.name %></p>
+        </div>
+        <div class="row">
+            <p class="email"><%= @user.email %></p>
+        </div>
+    </div>
+</div>
