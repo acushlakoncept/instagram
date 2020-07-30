@@ -1,6 +1,6 @@
 Cloudinary.config do |config|
-    config.cloud.name = "acushlakoncepts"
-    config.api_key = "646433418878379"
-    config.api_secret = "VQ-BqLg3LNpMwIaTynKAM6I9xVc"
+    config.cloud.name = ENV["cloudinary_cloud_name"]
+    config.api_key = ENV["cloudinary_api_key"]
+    config.api_secret = ENV["cloudinary_api_secret"]
     config.cdn_subdomain = true
 end
