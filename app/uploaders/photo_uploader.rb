@@ -13,18 +13,23 @@ class PhotoUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  include Cloudinary::CarrierWave
 
+  include Cloudinary::CarrierWave
+  
   process :convert => 'png'
   process :tags => ['post_picture']
-
+  
   version :standard do
-    process :resize_to_fill => [300, 300, :north]
+    process :resize_to_fill => [250, 250, :north]
   end
-
+  
   version :thumbnail do
     resize_to_fit(100, 100)
   end
+
+  def public_id
+    return model.short_name
+  end 
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)

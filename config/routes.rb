@@ -12,4 +12,5 @@ Rails.application.routes.draw do
 
   resources :posts, only: [:index, :show, :create] do
     resources :photos, only: [:create]
+  end
 end

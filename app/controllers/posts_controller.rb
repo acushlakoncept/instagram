@@ -37,4 +37,8 @@ class PostsController < ApplicationController
         flash[:danger] = "Post not exist!"
         redirect_to root_path
     end
+
+    def post_params
+        params.require(:post).permit(:content)
+    end
 end
